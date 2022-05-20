@@ -72,10 +72,10 @@ public class ManagerFilm {
     public FilmItem[] findLast() {
         findAll();
         int resultLength;
-       if (items.length > maxAmountOffFilm) {
-          resultLength = maxAmountOffFilm;
+        if (items.length > maxAmountOffFilm) {
+            resultLength = maxAmountOffFilm;
         } else {
-           resultLength = items.length;
+            resultLength = items.length;
         }
         //находим все фильмы, репозиторий отдает в прямом порядке, а надо в обратном
         FilmItem[] result = new FilmItem[resultLength];
